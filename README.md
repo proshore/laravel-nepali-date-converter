@@ -13,3 +13,4 @@ This Laravel package provides functionality to convert dates from the Gregorian 
 - PHP >= 8.0
 - Carbon PHP Library
 
+## LICENSE - MIT
