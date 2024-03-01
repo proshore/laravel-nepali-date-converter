@@ -2,7 +2,7 @@ name: Laravel Nepali Date Converter Code Analysis
 
 on:
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   laravel-tests:
