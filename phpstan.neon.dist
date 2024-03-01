@@ -1,0 +1,11 @@
+parameters:
+    level: 8
+    paths:
+        - src
+        - config
+    excludePaths:
+        - src/Commands/TestCommand
+        - src/NepaliDateConverterServiceProvider
+
+    tmpDir: build/phpstan
+    checkMissingIterableValueType: true
