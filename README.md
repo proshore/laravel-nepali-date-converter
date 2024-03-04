@@ -29,7 +29,7 @@ You can directly convert Carbon date to Nepali date using chain function in Carb
 
 ``Carbon\Carbon::now()->toBs();``
 
-[Example](https://ibb.co/Z8JQCcC?raw=true)
+<img src="assets/example1.png" alt="To Bs Example">
 
 Get Formatted date
 
@@ -37,7 +37,7 @@ Get Formatted date
 
 ``Carbon\Carbon::now()->toBsFormattedDate()``
 
-[Example](https://ibb.co/Fsrz89L?raw=true)
+<img src="assets/example2.png" alt="Example 2">
 Using without carbon
 
 ``Proshore\NepaliDate\Facades\NepaliDateConverter::getBsDateByAdDate(2024,03,01);``
