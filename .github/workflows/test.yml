@@ -1,4 +1,4 @@
-name: Laravel Nepali Date Converter Code Tests
+name: Pest Test
 
 on:
   pull_request:

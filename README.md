@@ -8,10 +8,16 @@ This Laravel package provides functionality to convert dates from the Gregorian 
 - Integration with Laravel's native Carbon library for efficient and accurate date manipulation.
 - Simple to integrate into existing Laravel applications.
 
+[![Tests](https://github.com/proshore/laravel-nepali-date-converter/actions/workflows/test.yml/badge.svg)](https://github.com/proshore/laravel-nepali-date-converter/actions/workflows/test.yml)
+[![Laravel Nepali Date Converter Code Analysis](https://github.com/proshore/laravel-nepali-date-converter/actions/workflows/analyze.yml/badge.svg)](https://github.com/proshore/laravel-nepali-date-converter/actions/workflows/analyze.yml)
+
 ## Requirements
 
 - PHP >= 8.0
 - Carbon PHP Library
+
+
+
 
 ## Installation
 

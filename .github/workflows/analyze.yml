@@ -1,4 +1,4 @@
-name: Laravel Nepali Date Converter Code Analysis
+name: PHPStan Analyze
 
 on:
   pull_request:
