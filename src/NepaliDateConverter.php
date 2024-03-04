@@ -80,4 +80,20 @@ class NepaliDateConverter
         return $this->converter->getBsDateByAdDate($adYear, $adMonth, $adDate);
     }
 
+    /**
+     * @param int $bsYear
+     * @param int $bsMonth
+     * @param int $bsDay
+     * @return Carbon|null
+     */
+    public function toAd(int $bsYear, int $bsMonth, int $bsDay): Carbon|null
+    {
+        $date = $this->converter->getAdDateByBsDate($bsYear, $bsMonth, $bsDay);
+        if(! $date) {
+            return null;
+        }
+
+        return Carbon::createFromDate($date['year'], $date['month'], $date['date']);
+    }
+
 }
