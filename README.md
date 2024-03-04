@@ -13,4 +13,41 @@ This Laravel package provides functionality to convert dates from the Gregorian 
 - PHP >= 8.0
 - Carbon PHP Library
 
-## LICENSE - MIT
+## Installation
+
+### Composer
+Install using composer
+
+`composer require proshore/laravel-nepali-date-converter`
+
+Publish your config file
+
+`php artisan vendor:publish --tag=nepali-date`
+
+## Usages
+You can directly convert Carbon date to Nepali date using chain function in Carbon.
+
+``Carbon\Carbon::now()->toBs();``
+
+[Example](https://ibb.co/Z8JQCcC?raw=true)
+
+Get Formatted date
+
+``Carbon\Carbon::now()->toBsDate()``
+
+``Carbon\Carbon::now()->toBsFormattedDate()``
+
+[Example](https://ibb.co/Fsrz89L?raw=true)
+Using without carbon
+
+``Proshore\NepaliDate\Facades\NepaliDateConverter::getBsDateByAdDate(2024,03,01);``
+
+``Proshore\NepaliDate\Facades\NepaliDateConverter::getAdDateByBsDate(2080,11,18);``
+
+[Example](https://ibb.co/w4YXk6X?raw=true)
+
+Get Carbon date from Bs Date
+
+``Proshore\NepaliDate\Facades\NepaliDateConverter::toAd(2080,11,18);``
+
+[Example](https://ibb.co/syXzN6T?raw=true)
