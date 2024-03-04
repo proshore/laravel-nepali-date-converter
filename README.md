@@ -37,17 +37,18 @@ Get Formatted date
 
 ``Carbon\Carbon::now()->toBsFormattedDate()``
 
-<img src="assets/example2.png" alt="Example 2">
+<img src="assets/example2.png" alt="Formatted To Bs Example">
+
 Using without carbon
 
 ``Proshore\NepaliDate\Facades\NepaliDateConverter::getBsDateByAdDate(2024,03,01);``
 
 ``Proshore\NepaliDate\Facades\NepaliDateConverter::getAdDateByBsDate(2080,11,18);``
 
-[Example](https://ibb.co/w4YXk6X?raw=true)
+<img src="assets/example3.png" alt="Default converter">
 
 Get Carbon date from Bs Date
 
 ``Proshore\NepaliDate\Facades\NepaliDateConverter::toAd(2080,11,18);``
 
-[Example](https://ibb.co/syXzN6T?raw=true)
+<img src="assets/example4.png" alt="BS To Carbon Date">
