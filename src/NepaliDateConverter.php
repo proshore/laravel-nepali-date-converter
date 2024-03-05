@@ -35,7 +35,7 @@ class NepaliDateConverter
      * @param Carbon $date
      * @return NepaliDate|null
      */
-    public function toBs(Carbon $date): ?NepaliDate
+    public function toBS(Carbon $date): ?NepaliDate
     {
         return $this->converter->getToBs($date);
     }
@@ -44,7 +44,7 @@ class NepaliDateConverter
      * @param Carbon $date
      * @return string|null
      */
-    public function toBsDate(Carbon $date): ?string
+    public function toBSDate(Carbon $date): ?string
     {
         return $this->converter->getToBs($date)?->getDate();
     }
@@ -53,7 +53,7 @@ class NepaliDateConverter
      * @param Carbon $date
      * @return string|null
      */
-    public function toBsFormattedDate(Carbon $date): ?string
+    public function toBSFormattedDate(Carbon $date): ?string
     {
         return $this->converter->getToBs($date)?->getFormattedDate();
     }
@@ -64,7 +64,7 @@ class NepaliDateConverter
      * @param int $bsDay
      * @return array<string,int>|null
      */
-    public function getAdDateByBsDate(int $bsYear, int $bsMonth, int $bsDay): array|null
+    public function getADbyBS(int $bsYear, int $bsMonth, int $bsDay): array|null
     {
         return $this->converter->getAdDateByBsDate($bsYear, $bsMonth, $bsDay);
     }
@@ -75,7 +75,7 @@ class NepaliDateConverter
      * @param int $adDate
      * @return array<string,int>|null
      */
-    public function getBsDateByAdDate(int $adYear, int $adMonth, int $adDate) : array|null
+    public function getBSbyAD(int $adYear, int $adMonth, int $adDate) : array|null
     {
         return $this->converter->getBsDateByAdDate($adYear, $adMonth, $adDate);
     }
@@ -86,7 +86,7 @@ class NepaliDateConverter
      * @param int $bsDay
      * @return Carbon|null
      */
-    public function toAd(int $bsYear, int $bsMonth, int $bsDay): Carbon|null
+    public function toAD(int $bsYear, int $bsMonth, int $bsDay): Carbon|null
     {
         $date = $this->converter->getAdDateByBsDate($bsYear, $bsMonth, $bsDay);
         if(! $date) {

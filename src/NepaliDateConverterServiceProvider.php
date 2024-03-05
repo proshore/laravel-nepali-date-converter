@@ -51,13 +51,13 @@ class NepaliDateConverterServiceProvider extends ServiceProvider
      */
     private function addCarbonMacro(): void
     {
-        Carbon::macro('toBs', function () {
+        Carbon::macro('toBS', function () {
             return \Proshore\NepaliDate\Facades\NepaliDateConverter::toBs($this);
         });
-        Carbon::macro('toBsDate', function () {
+        Carbon::macro('toBSDate', function () {
             return \Proshore\NepaliDate\Facades\NepaliDateConverter::toBsDate($this);
         });
-        Carbon::macro('toBsFormattedDate', function () {
+        Carbon::macro('toBSFormattedDate', function () {
             return \Proshore\NepaliDate\Facades\NepaliDateConverter::toBsFormattedDate($this);
         });
     }
