@@ -33,29 +33,29 @@ Publish your config file
 ## Usages
 You can directly convert Carbon date to Nepali date using chain function in Carbon.
 
-``Carbon\Carbon::now()->toBs();``
+``Carbon\Carbon::now()->toBS();``
 
 <img src="assets/example1.png" alt="To Bs Example">
 
 Get Formatted date
 
-``Carbon\Carbon::now()->toBsDate()``
+``Carbon\Carbon::now()->toBSDate();``
 
-``Carbon\Carbon::now()->toBsFormattedDate()``
+``Carbon\Carbon::now()->toBSFormattedDate();``
 
 <img src="assets/example2.png" alt="Formatted To Bs Example">
 
 Using without carbon
 
-``Proshore\NepaliDate\Facades\NepaliDateConverter::getBsDateByAdDate(2024,03,01);``
+``Proshore\NepaliDate\Facades\NepaliDateConverter::getBSbyAd(2024,03,01);``
 
-``Proshore\NepaliDate\Facades\NepaliDateConverter::getAdDateByBsDate(2080,11,18);``
+``Proshore\NepaliDate\Facades\NepaliDateConverter::getADbyBS(2080,11,18);``
 
 <img src="assets/example3.png" alt="Default converter">
 
 Get Carbon date from Bs Date
 
-``Proshore\NepaliDate\Facades\NepaliDateConverter::toAd(2080,11,18);``
+``Proshore\NepaliDate\Facades\NepaliDateConverter::toAD(2080,11,18);``
 
 <img src="assets/example4.png" alt="BS To Carbon Date">
 
