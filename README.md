@@ -58,3 +58,6 @@ Get Carbon date from Bs Date
 ``Proshore\NepaliDate\Facades\NepaliDateConverter::toAd(2080,11,18);``
 
 <img src="assets/example4.png" alt="BS To Carbon Date">
+
+## Contributers ✨
+[<img style="border-radius: 50%; border: 2px solid black; width: 50px; height: 50px; object-fit: cover;" src="https://github.com/kundankarna1994.png" width="60px;"/><br /><sub>](https://github.com/kundankarna1994/)
